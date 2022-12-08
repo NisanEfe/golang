@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 
 	// var a [4]string
@@ -21,5 +23,12 @@ func main() {
 	// for i := 0; i < len(a); i++ {
 	// 	fmt.Println(a[i] + 3)
 	// }
+
+	a := [3]int{12, 23, 54}
+	b := a
+	fmt.Println(b)
+	b[0] = 10
+	fmt.Println(b)
+	fmt.Println(a)
 
 }
